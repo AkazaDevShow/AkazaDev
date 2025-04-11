@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AkazaDevWork</title>
+  <link rel="stylesheet" href="background.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Poppins:wght@500;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-y: scroll; /* Ensures scrolling */
+    }
+
+    .gallery {
+      display: flex;
+      flex-direction: column; /* Align images vertically */
+      justify-content: center;
+      align-items: center;
+      gap: 20rem;
+      padding: 3rem 1rem;
+    }
+
+    .gallery img {
+      width: 100%; /* Full width of screen */
+      max-width: 1500px; /* Max width of images */
+      transform: scale(4);
+      height: auto;
+      border-radius: 2px;
+    }
+
+    .bottom-button {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .btn {
+      background-color: #0074d9;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.2rem;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #339af0;
+      transform: scale(1.1); /* Slightly enlarge the button when hovered */
+    }
+
+    .btn:active {
+      transform: scale(1); /* Button scales back to normal when clicked */
+    }
+
+    /* Optional: for larger screens, keep large images but keep responsive */
+    @media (min-width: 600px) {
+      .gallery img {
+        width: 95%;
+      }
+    }
+
+    .gallery {
+      padding-bottom: 120px; /* Increased space for scrolling */
+    }
+
+  </style>
+</head>
+<body>
+  <section id="home" class="section">  
+    <p1> Loading </p1>
+
+    <div class="gallery">
+      <img src="https://media.discordapp.net/attachments/1288850819508211924/1360185093670309999/New_Project_12.png?ex=67fa3295&is=67f8e115&hm=c4cc1067b2426ca5e3ed29b3a8283a377d03dcc95db5cf7054c1212998ca9205&=&format=webp&quality=lossless&width=843&height=474" alt="Work 1">
+      <img src="https://media.discordapp.net/attachments/1288850819508211924/1360185093670309999/New_Project_12.png?ex=67fa3295&is=67f8e115&hm=c4cc1067b2426ca5e3ed29b3a8283a377d03dcc95db5cf7054c1212998ca9205&=&format=webp&quality=lossless&width=843&height=474" alt="Work 2">
+      <img src="https://media.discordapp.net/attachments/1288850819508211924/1360185093670309999/New_Project_12.png?ex=67fa3295&is=67f8e115&hm=c4cc1067b2426ca5e3ed29b3a8283a377d03dcc95db5cf7054c1212998ca9205&=&format=webp&quality=lossless&width=843&height=474" alt="Work 3">
+      <img src="https://media.discordapp.net/attachments/1288850819508211924/1360185093670309999/New_Project_12.png?ex=67fa3295&is=67f8e115&hm=c4cc1067b2426ca5e3ed29b3a8283a377d03dcc95db5cf7054c1212998ca9205&=&format=webp&quality=lossless&width=843&height=474" alt="Work 4">
+    </div> 
+
+    <div class="bottom-button">
+      <button class="btn" onclick="location.href='index.html'">Back To Main</button>
+    </div>
+  </section>
+</body>
+</html>

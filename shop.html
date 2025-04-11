@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AkazaDevWork</title>
+  <link rel="stylesheet" href="background.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Poppins:wght@500;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #111;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .info-box {
+      width: 100%;
+      max-width: 400px;
+      min-height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 5px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      gap: 1rem;
+    }
+
+    .info-box img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+    }
+
+    .bottom-button {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .btn {
+      background-color: #0074d9;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.2rem;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: background-color 0.3s, transform 0.3s;
+      margin-right: auto; /* pushes button to the left side in RTL layout */
+    }
+
+    .btn:hover {
+      background-color: #339af0;
+      transform: scale(1.05);
+    }
+
+    .btn:active {
+      transform: scale(1);
+    }
+  </style>
+</head>
+<body>
+  <section class="section">
+
+    <!-- Discord Account -->
+    <div class="info-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord Logo">
+      <button class="btn" onclick="window.open('https://discord.com/users/888199188381335612', '_blank')">Open</button>
+    </div>
+
+<!-- Roblox Account -->
+<div class="info-box">
+    <img src="https://clipartcraft.com/images/blue-logo-roblox-2.png" alt="Roblox Logo">
+    <button class="btn" onclick="window.open('https://www.roblox.com/users/4798562875/profile', '_blank')">Open</button>
+  </div>  
+
+    <!-- Discord Server -->
+    <div class="info-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Server Logo">
+      <button class="btn" onclick="window.open('https://discord.gg/GtXBRx2nER', '_blank')">Join</button>
+    </div>
+
+    <div class="bottom-button">
+        <button class="btn" onclick="location.href='index.html'">Back To Main</button>
+      </div>
+  </section>
+</body>
+</html>
